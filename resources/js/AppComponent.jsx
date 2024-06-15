@@ -39,7 +39,7 @@ export function AppComponent() {
     };
 
     return (
-        <div className="flex flex-col min-h-screen w-full bg-fondoWeb text-texto font-parrafo m-0 p-0">
+        <div className="flex flex-col min-h-screen w-full bg-radial-gradient from-enfasis2 via-fondoWeb to-enfasis1 animate-gradient-x text-texto font-parrafo bg-[length:200%_200%] m-0 p-0">
             <header className="flex items-center justify-between bg-transparent z-50 w-full px-4 md:px-8">
                 <div className="flex items-center space-x-4">
                     <img
@@ -99,7 +99,7 @@ export function AppComponent() {
             <main className="flex-grow flex flex-col items-center justify-center w-full m-0 p-0">
                 <Router>
                     <div path="/" className="flex flex-col items-center w-full md:w-5/6 lg:w-11/12 space-y-4">
-                    <h1 class="text-6xl md:text-8xl font-titulo mb-8 text-center p-4 rounded-lg text-neon-pink animate-neon-glow">Izanami.gg</h1>
+                        <h1 className="text-6xl md:text-8xl font-titulo mb-8">Izanami.gg</h1>
                         <div className="flex flex-col md:flex-row items-center md:space-x-2 space-y-4 md:space-y-0 mb-7">
                             <input
                                 type="text"
@@ -154,3 +154,4 @@ export function AppComponent() {
         </div>
     );
 }
+    
