@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap'); /*Merriweather*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');/*Roboto*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.neon-text {
+    font-size: 6rem; /* Ajusta el tamaño según tus necesidades */
+    font-family: 'Merriweather', serif; /* Fuente personalizada */
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    color: transparent; /* Hace el interior del texto transparente */
+    text-shadow:
+      2px 2px 0 #FF00FF, /* Sombra gruesa alrededor del texto */
+      -2px -2px 0 #FF00FF,
+      2px -2px 0 #FF00FF,
+      -2px 2px 0 #FF00FF,
+      4px 4px 0 #00FFFF,
+      -4px -4px 0 #00FFFF,
+      4px -4px 0 #00FFFF,
+      -4px 4px 0 #00FFFF;
+    filter: drop-shadow(0 0 5px #FF00FF); /* Añade un ligero resplandor */
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* Animación de resplandor neón */
+  @keyframes neon-glow {
+    0%, 100% {
+      text-shadow:
+        2px 2px 0 #FF00FF, /* Sombra gruesa alrededor del texto */
+        -2px -2px 0 #FF00FF,
+        2px -2px 0 #FF00FF,
+        -2px 2px 0 #FF00FF,
+        4px 4px 0 #00FFFF,
+        -4px -4px 0 #00FFFF,
+        4px -4px 0 #00FFFF,
+        -4px 4px 0 #00FFFF;
+      filter: drop-shadow(0 0 5px #FF00FF); /* Efecto de resplandor */
+    }
+    50% {
+      text-shadow:
+        2px 2px 0 #00FFFF, /* Cambia los colores de la sombra */
+        -2px -2px 0 #00FFFF,
+        2px -2px 0 #00FFFF,
+        -2px 2px 0 #00FFFF,
+        4px 4px 0 #FF00FF,
+        -4px -4px 0 #FF00FF,
+        4px -4px 0 #FF00FF,
+        -4px 4px 0 #FF00FF;
+      filter: drop-shadow(0 0 5px #00FFFF); /* Efecto de resplandor */
+    }
+  }
+  
