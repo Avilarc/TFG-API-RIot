@@ -1,4 +1,4 @@
-import { h } from 'preact';
+
 import { useEffect, useState } from 'preact/hooks';
 import { ddragonImageUrl, ddragonRankedEmblemUrl } from './utils';
 
@@ -7,7 +7,7 @@ export function Details({ gameName, tagLine }) {
     const [rank, setRank] = useState(null);
     const [matches, setMatches] = useState([]);
     const [error, setError] = useState(null);
-    const [loadedMatches, setLoadedMatches] = useState(10); // Estado para el número de partidas cargadas
+    const [loadedMatches] = useState(10); // Estado para el número de partidas cargadas
 
     useEffect(() => {
         const fetchProfileAndMatches = async () => {
@@ -111,9 +111,6 @@ export function Details({ gameName, tagLine }) {
         );
     };
 
-    const loadMoreMatches = () => {
-        setLoadedMatches(loadedMatches + 10);
-    };
 
     return (
         <div className="min-h-screen w-full flex flex-col items-center justify-center bg-detalles-fondo bg-cover bg-center m-0 p-8">
@@ -166,14 +163,7 @@ export function Details({ gameName, tagLine }) {
                             </div>
                         ))}
                     </div>
-                    <div className="flex justify-center mt-6">
-                        <button
-                            onClick={loadMoreMatches}
-                            className="font-titulo text-lg bg-secciones text-texto py-3 px-6 rounded-full hover:bg-enfasis2 transition-all focus:outline-none focus:ring-4 focus:ring-enfasis2"
-                        >
-                            Cargar Más
-                        </button>
-                    </div>
+                   
                 </div>
             )}
 

@@ -19,11 +19,11 @@ class ComposerStaticInite4241ee2d81919f4e6e2c5c5a6ea6fc0
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '2203a247e6fda86070a5e4e07aed533a' => __DIR__ . '/..' . '/symfony/clock/Resources/now.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
@@ -126,6 +126,10 @@ class ComposerStaticInite4241ee2d81919f4e6e2c5c5a6ea6fc0
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
             'Laravel\\Prompts\\' => 16,
+        ),
+        'J' => 
+        array (
+            'JnJairo\\Laravel\\Ngrok\\' => 22,
         ),
         'I' => 
         array (
@@ -416,6 +420,10 @@ class ComposerStaticInite4241ee2d81919f4e6e2c5c5a6ea6fc0
         'Laravel\\Prompts\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/prompts/src',
+        ),
+        'JnJairo\\Laravel\\Ngrok\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jn-jairo/laravel-ngrok/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -2789,6 +2797,10 @@ class ComposerStaticInite4241ee2d81919f4e6e2c5c5a6ea6fc0
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'JnJairo\\Laravel\\Ngrok\\NgrokCommand' => __DIR__ . '/..' . '/jn-jairo/laravel-ngrok/src/NgrokCommand.php',
+        'JnJairo\\Laravel\\Ngrok\\NgrokProcessBuilder' => __DIR__ . '/..' . '/jn-jairo/laravel-ngrok/src/NgrokProcessBuilder.php',
+        'JnJairo\\Laravel\\Ngrok\\NgrokServiceProvider' => __DIR__ . '/..' . '/jn-jairo/laravel-ngrok/src/NgrokServiceProvider.php',
+        'JnJairo\\Laravel\\Ngrok\\NgrokWebService' => __DIR__ . '/..' . '/jn-jairo/laravel-ngrok/src/NgrokWebService.php',
         'Laravel\\Prompts\\Concerns\\Colors' => __DIR__ . '/..' . '/laravel/prompts/src/Concerns/Colors.php',
         'Laravel\\Prompts\\Concerns\\Cursor' => __DIR__ . '/..' . '/laravel/prompts/src/Concerns/Cursor.php',
         'Laravel\\Prompts\\Concerns\\Erase' => __DIR__ . '/..' . '/laravel/prompts/src/Concerns/Erase.php',
